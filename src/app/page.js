@@ -100,8 +100,10 @@ export default function Home() {
         <p>No trips found (check your Supabase table or sample data).</p>
       ) : (
         <ul>
-          {trips.map(t => (
-            <li key={t.id}>{t.title} — {t.location}</li>
+          {trips.map((t) => (
+            <li key={t.id}>
+              {t.title} — {t.location}
+            </li>
           ))}
         </ul>
       )}
